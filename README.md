@@ -32,7 +32,7 @@ Inspirations and prior work
 a.	Robinhood is an app that allows people to invest in particular stocks and other financial assets (such as ETFs).
 2.	https://finmason.com/  “Finmason”
 a.	Finmason is an independently run financial analytics platform for both retail and institutional investors. The purpose of this application is to help investors better understand financial assets. 
-3.	“iQuantfi”
+3.	http://iquantifi.com/ “iQuantfi”
 a.	This application was one of the first virtual financial advistors for the retail audience. The purpose of this application was to help individuals make the best possible investment chouices.
 
 Compare/contrast your app with others
