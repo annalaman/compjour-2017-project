@@ -1,0 +1,30 @@
+<!doctype html>
+
+<h1>Daily Data for US Assets Only</h1>
+
+<ul>
+  <table border=1 cellpadding=7>
+
+                <th>Date</th>
+                <th>Dow Jones Industrial Average</th>
+                <th>Crude WTI Oil Price</th>
+                <th>DJIA Increase</th>
+
+
+            </tr>
+
+            {% for obj in csv_list %}
+            <tr>
+                <td>{{ obj.Date }}</td>
+                <td>{{ obj.DJIAOpen }}</td>
+                <td>{{ obj.CRUDEWTI }}</td>
+                <td>{{ obj.DJIA_INC }}</td>
+
+
+
+
+            </tr>
+            {% endfor %}
+      </table>
+
+</ul>

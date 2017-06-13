@@ -1,0 +1,73 @@
+<!doctype html>
+
+<h1>Daily Data for Financial Assets where Major Stock Indices Increased From Prior Day</h1>
+<h2>Looking at the following Indcies: DJIA, Nikkei, Canadian TSX, Argentina Merval, IPC Mexico</h2>
+
+<ul>
+  <table border=1 cellpadding=7>
+
+                <th>Date</th>
+                <th>Dow Jones Industrial Average</th>
+                <th>Nikkei225</th>
+                <th>Stoxx</th>
+                <th>Cac40</th>
+                <th>IPC Mexico</th>
+                <th>Canada TSX Index</th>
+                <th>ASX Australia</th>
+                <th>DAX Germany</th>
+                <th>Merval Aregntina</th>
+                <th>RTSI Russia</th>
+                <th>TWII Taiwan</th>
+                <th>Kopsi Korea</th>
+                <th>IBEX Spain</th>
+                <th>Swiss Market Index</th>
+                <th>Crude WTI Oil Price</th>
+                <th>Yuan to Dollar exchange rate</th>
+                <th>Euro to Dollar exchange rate</th>
+                <th>Yen to Dollar exchange rate</th>
+                <th>Peso to Dollar exchange rate</th>
+                <th>Real to Dollar exchange rate</th>
+                <th>South Korean Won to Dollar exchange rate</th>
+                <th>DJIA Increase</th>
+                <th>Nikkei 225 Increase</th>
+                <th>IPC Mexico Increase</th>
+                <th>Argentina Merval Index Increase</th>
+                <th>Canada TSX Mexico Increase</th>
+
+            </tr>
+
+            {% for obj in csv_list %}
+            <tr>
+                <td>{{ obj.Date }}</td>
+                <td>{{ obj.DJIAOpen }}</td>
+                <td>{{ obj.NIKKEI225 }}</td>
+                <td>{{ obj.StoxxEurope50 }}</td>
+                <td>{{ obj.CAC40Open }}</td>
+                <td>{{ obj.IPCMexicoOpen }}</td>
+                <td>{{ obj.CanadaTSXOpen }}</td>
+                <td>{{ obj.ASXAustraliaOpen }}</td>
+                <td>{{ obj.DAXOpenGermany }}</td>
+                <td>{{ obj.MervalAregentinaOpen }}</td>
+                <td>{{ obj.RTSIRussianOpen }}</td>
+                <td>{{ obj.TaiwanTWIIIndex }}</td>
+                <td>{{ obj.KopsiKoreaOpen }}</td>
+                <td>{{ obj.IBEXSpainIndex }}</td>
+                <td>{{ obj.SwissMarketIndex }}</td>
+                <td>{{ obj.CRUDEWTI }}</td>
+                <td>{{ obj.YuanToDol }}</td>
+                <td>{{ obj.EurToDol }}</td>
+                <td>{{ obj.YenToDol }}</td>
+                <td>{{ obj.PesoToDol }}</td>
+                <td>{{ obj.RealToDol }}</td>
+                <td>{{ obj.SouthKoreaWonToDol }}</td>
+                <td>{{ obj.DJIA_INC }}</td>
+                <td>{{ obj.NIKKEI225_INC }}</td>
+                <td>{{ obj.IPCMexicoOpen_INC }}</td>
+                <td>{{ obj.MervalAregentinaOpen_INC }}</td>
+                <td>{{ obj.CanadaTSXOpen_INC }}</td>
+
+            </tr>
+            {% endfor %}
+      </table>
+
+</ul>
